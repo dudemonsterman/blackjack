@@ -12,7 +12,7 @@ def dealer2
 		puts 'You win'
 		puts $final
 		exit
-	elsif $dfinal > 21
+	elsif $dfinal > 21 and $final <= 21
 		puts 'Dealer busts'
 		puts 'You win'
 		exit
@@ -32,7 +32,7 @@ def dealer
 
 	puts dcards
 	puts dcards2
-	
+	puts $dfinal
 	dealer2
 end
 def options
